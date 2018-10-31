@@ -6,3 +6,5 @@ To do:
 3. Notified the user by vibration
 
 Screenshot:
+
+![vibrate](https://user-images.githubusercontent.com/33603567/47817771-33790180-dd5f-11e8-9f3a-5e6df25d61b5.jpg)
