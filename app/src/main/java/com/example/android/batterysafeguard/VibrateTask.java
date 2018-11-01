@@ -1,6 +1,7 @@
 package com.example.android.batterysafeguard;
 
 import android.content.Context;
+import android.media.MediaPlayer;
 import android.os.Vibrator;
 
 public class VibrateTask {
@@ -16,8 +17,11 @@ public class VibrateTask {
         if (VIBRATE.equals(action ) && level == CHARGED_LEVEL){
             Vibrator vibrator = (Vibrator)context.getSystemService(Context.VIBRATOR_SERVICE);
             if (vibrator!=null){
-                vibrator.vibrate(30000);
+                vibrator.vibrate(9000);
             }
+
+            MediaPlayer player = MediaPlayer.create(context, R.raw.tell_me_who);
+            player.start();
 
         }
     }

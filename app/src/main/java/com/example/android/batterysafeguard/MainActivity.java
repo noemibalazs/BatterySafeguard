@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         registerReceiver(receiver, new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
     }
 
+
     private void intentService(){
 
         Intent i = new Intent(this, VibrateService.class);
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         i.putExtra(VibrateTask.NUMBER, actionLevel);
         startService(i);
     }
+
 
     @Override
     protected void onDestroy() {
