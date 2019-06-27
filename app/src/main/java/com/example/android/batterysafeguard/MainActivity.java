@@ -34,18 +34,28 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void intentService(){
-
         Intent i = new Intent(this, VibrateService.class);
         i.setAction(VibrateTask.VIBRATE);
         i.putExtra(VibrateTask.NUMBER, actionLevel);
         startService(i);
     }
 
+    private void stopService(){
+        Intent intent = new Intent(this, VibrateService.class);
+        stopService(intent);
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        stopService();
+    }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
         unregisterReceiver(receiver);
+
     }
 
     private  class VibrateReceiver extends BroadcastReceiver {

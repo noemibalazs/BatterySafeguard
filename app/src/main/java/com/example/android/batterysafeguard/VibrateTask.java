@@ -17,7 +17,7 @@ public class VibrateTask {
         if (VIBRATE.equals(action ) && level == CHARGED_LEVEL){
             Vibrator vibrator = (Vibrator)context.getSystemService(Context.VIBRATOR_SERVICE);
             if (vibrator!=null){
-                vibrator.vibrate(9000);
+                vibrator.vibrate(6000);
             }
 
             MediaPlayer player = MediaPlayer.create(context, R.raw.tell_me_who);
