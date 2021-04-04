@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">Battery Safeguard</string>
-    <string name="show">Show</string>
-    <string name="battery">Battery level</string>
+    <string name="txt_battery">Battery level</string>
+    <string name="txt_battery_with_percentage">Battery level: %d%%</string>
+    <string name="txt_set_value">Set percentage</string>
+    <string name="txt_inform_user_to_select_default_value">Default battery guard value is 93. You can change this value anytime!</string>
+    <string name="txt_accept">Accept</string>
+    <string name="txt_hint">Default value is 93</string>
 </resources>
