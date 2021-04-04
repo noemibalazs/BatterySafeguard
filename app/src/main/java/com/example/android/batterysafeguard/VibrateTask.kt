@@ -1,7 +1,6 @@
 package com.example.android.batterysafeguard
 
 import android.content.Context
-import android.media.AudioAttributes
 import android.media.MediaPlayer
 import android.os.Vibrator
 
